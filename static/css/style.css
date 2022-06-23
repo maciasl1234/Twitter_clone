@@ -5,15 +5,15 @@ COMMON
 html, body {
     height: 100%;
     font-family: 'Ubuntu', sans-serif;
-    background-color: #ba7dd8;
+    background-color: #cba4df;
 }
 
 .content {
     max-width: 600px;
     height: 100%;
     margin: 0 auto;
-    border-left: 1px solid #c0b6c5;
-    border-right: 1px solid #c0b6c5;
+    border-left: 1px solid #cba4df;
+    border-right: 1px solid #cba4df;
 }
 
 .header {
@@ -126,6 +126,17 @@ POSTS
 
 .posts li .name_body .datetime {
     color: #9d88a7;
+}
+
+.content .post_form .btn {
+    padding: 5px 12px;
+    border-radius: 3px;
+    border: none;
+    background-color: #1f5feb;
+    font-size: 18px;
+    color: #ffffff;
+    display: flex;
+    position: relative;
 }
 
 @media screen and (max-width: 500px) {
