@@ -1,0 +1,27 @@
+
+
+{% extends "base.html" %}{% block content %} {% load static %}
+
+
+
+<section class="content">
+    <div class="'container" style="display: flex;">  
+            <div class="post_form">
+                <form action="/edit/{{post.id}}/" method="POST" enctype="multipart/form-data">
+                    {% csrf_token  %}
+                    <input type="text" name="name" placeholder="Your name" value="{{post.name}}" required />
+                    <textarea name="body" placeholder="What's happening?" maxlength="140"  required >{{post.body}}</textarea>
+                    <div class="flex">
+                        <button href="/" class="cancel" type="submit">Cancel</button>
+                        <button class="update" type="submit">update</button>
+                    </div>
+                </form>
+            </div>
+        
+    </div>
+    <footer>
+  
+    </footer>
+  </section>
+  
+  {% endblock %}
